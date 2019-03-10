@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-cookie-manager"
+        version="0.0.1">
+
+    <name>cookie-manager</name>
+
+    <description>Flush (save) cookies on Android on-demand.</description>
+
+    <keywords></keywords>
+
+    <repo>https://github.com/claydotio/cookie-manager.git</repo>
+    <issue>https://github.com/claydotio/cookie-manager/issues</issue>
+
+    <license>MIT</license>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <js-module src="www/cookie_manager.js" name="cookieManager">
+        <clobbers target="cookieManager" />
+    </js-module>
+
+    <!-- iOS -->
+    <!-- <platform name="ios">
+    </platform> -->
+
+    <!-- Android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="CookieManagerPlugin">
+                <param name="android-package" value="io.clay.cookiemanagerplugin.CookieManagerPlugin" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/CookieManagerPlugin.java" target-dir="src/io/clay/cookiemanagerplugin/" />
+    </platform>
+
+</plugin>

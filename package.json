@@ -1,0 +1,19 @@
+{
+  "name": "cookie-manager",
+  "private": true,
+  "description": "",
+  "main": "www/cookie_manager.js",
+  "version": "0.0.1",
+  "scripts": {
+  },
+  "author": "",
+  "license": "",
+  "devDependencies": {
+  },
+  "dependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/claydotio/cordova-plugin-cookie-manager.git"
+  }
+}
